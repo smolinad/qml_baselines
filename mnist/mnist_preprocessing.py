@@ -100,5 +100,5 @@ def preprocess_mnist_digits(classes=[3,6]):
     x_train_bin = np.array(x_train_nocon > THRESHOLD, dtype=np.float32)
     x_test_bin = np.array(x_test_small > THRESHOLD, dtype=np.float32)
 
-    return x_train_bin, y_train_nocon, x_test_bin, y_test
+    return x_train_bin.reshape(-1, 16), y_train_nocon, x_test_bin.reshape(-1, 16), y_test
 
