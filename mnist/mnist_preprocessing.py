@@ -63,7 +63,7 @@ def remove_contradicting(xs, ys):
 
     return np.array(new_x), np.array(new_y)
 
-def preprocess_mnist_digits(classes=[3,6]):
+def preprocess_mnist_digits(classes=[3,6], img_height=4):
     """"
     Function that downloads the MNIST Digits dataset with TensorFlow and performs the following tasks:
         1. Normalizes pixel values from (0, 255) to (0, 1).
@@ -89,8 +89,8 @@ def preprocess_mnist_digits(classes=[3,6]):
     print("Number of filtered test examples:", len(x_test))
 
     # Resize images to 4x4
-    x_train_small = tf.image.resize(x_train, (4,4)).numpy()
-    x_test_small = tf.image.resize(x_test, (4,4)).numpy()
+    x_train_small = tf.image.resize(x_train, (img_height, img_height)).numpy()
+    x_test_small = tf.image.resize(x_test, (img_height, img_height)).numpy()
 
     x_train_nocon, y_train_nocon = remove_contradicting(x_train_small, y_train)
 
@@ -100,5 +100,5 @@ def preprocess_mnist_digits(classes=[3,6]):
     x_train_bin = np.array(x_train_nocon > THRESHOLD, dtype=np.float32)
     x_test_bin = np.array(x_test_small > THRESHOLD, dtype=np.float32)
 
-    return x_train_bin, np.where(y_train_nocon==False, -1, 1), x_test_bin, np.where(y_test==False, -1, 1)
+    return x_train_bin, y_train, x_test_bin, y_test
 

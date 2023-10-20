@@ -31,10 +31,11 @@ class NeuralNetwork():
     def __init__(self, input_shape=(16,)):
         self.model = tf.keras.models.Sequential([
             # Hidden layer of 10 neurons, with bias vector.
+            tf.keras.layers.Input(shape=input_shape),
             tf.keras.layers.Dense(
-                20, activation="tanh", 
-                use_bias=True, 
-                input_shape=input_shape),
+                10, 
+                activation="relu", 
+                use_bias=True),
             # Output layer
             tf.keras.layers.Dense(4, activation="softmax"),
             tf.keras.layers.Dense(1)
@@ -44,7 +45,7 @@ class NeuralNetwork():
         self.model.compile(
             optimizer="adam", 
             loss="binary_crossentropy", 
-            metrics=["accuracy"])
+            metrics=["binary_accuracy"])
         self.model.fit(x_train, y_train, epochs=100)    
 
     def predict(self, inputs):
