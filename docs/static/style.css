@@ -1,0 +1,111 @@
+html, body{
+    min-height: 80vh;
+    height: auto !important;
+    height: 100%;
+    background-color: #111419;
+    font-family: "DM Sans";
+    font-size: 16px;
+    color:#EFF1F3;
+    padding-top: 70px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #111419;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #EFF1F3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EDFFAB;
+}
+
+.nav-item ul li a{
+    color: #EFF1F3;
+    font-weight: bold;
+}
+
+.nav-item ul a:hover{
+    color: #EDFFAB;
+    transition: 0.35s;
+}
+
+.text-btn{
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+    display: inline-block;
+    /* font-family: "Roboto Mono"; */
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+  
+.text-btn:hover{
+    transition: 0.4s;
+}
+
+.encrypt{
+    color: #f2423680;
+}
+
+.encrypt:hover{
+    color: #f24236;
+}
+
+.decrypt{
+    color: #4062BB80;
+}
+
+.decrypt:hover{
+    color: #4062BB;
+}
+
+textarea {
+    background-color: #1c2129;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #EFF1F3;
+    font-size: 0.8rem;
+    resize: none;
+    width: 50vw;
+    height: 20vh;
+    caret-color: #EDFFAB;
+}
+
+.key{
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    width: 50vw;
+    height: 2.75rem;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: 3px solid #EDFFAB80;
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.form-select {
+    background-color: #1c2129;
+    color: #EFF1F3;
+}
+
+footer{
+    font-size: 0.6rem;
+}
+
+table td {
+    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
+}
