@@ -13,7 +13,7 @@ The webview of the notebooks can be seen [here](https://smolinad.github.io/quant
 - Description: Implements a quantum variational circuit for MNIST Digits classification, as per Farhi & Neven (2018).
 - Directory: `/mnist`
 - We introduce a companion Marimo notebook. Marimo is a new generation Python notebook that provides reactive and interactive data insights.
-  The notebook is located [https://smolinad.github.io/quantum_machine_learning/docs/mnist](here), and it can by run as follows:
+  The notebook is located [here](https://smolinad.github.io/quantum_machine_learning/docs/mnist), and it can by run as follows:
     + Install `marimo` with `pip install marimo`.
     + Download the notebook, and in the downloads directory (or any chosen directory) run `marimo edit nameofthenotebook.py`.
     + A local host will promp in your default browser, just as Jupyter notebook. 
