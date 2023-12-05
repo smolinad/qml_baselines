@@ -1,7 +1,7 @@
 # Quantum Machine Learning Models Repository
 
 Sebastian Molina - [smolinad@unal.edu.co](mailto:smolinad@unal.edu.co)  
-Sergio Quiroga - [squirogas@unal.edu.co](mailto:squirogasd@unal.edu.co)    
+Sergio Quiroga - [squirogas@unal.edu.co](mailto:squirogasd@unal.edu.co)  
 Supervisors: Fabio Gonzalez & Diego Useche.
 
 This repository is a collection of quantum machine learning models implemented using various quantum computing frameworks. 
