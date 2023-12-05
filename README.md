@@ -8,10 +8,10 @@ By the time being, the models were implemented on Tencents's `TensorCircuit` and
 
 ## Model 1: Quantum Variational Circuit (Farhi & Neven)
 - Description: Implements a quantum variational circuit for MNIST Digits classification, as per Farhi & Neven (2018).
-- Directory: `/quantum_variational_circuit`
+- Directory: `/mnist`
 
 ## Model 2: Quantum Support Vector Machine with $ZZ$-feature map
 - Description: Implements a quantum version of a support vector machine for classification tasks.
-- Directory: `/quantum_support_vector_machine`
+- Directory: `/qsvm`
 
 
