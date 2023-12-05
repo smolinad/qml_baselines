@@ -21,4 +21,10 @@ The webview of the notebooks can be seen [https://smolinad.github.io/quantum_mac
 - Description: Implements a quantum version of a support vector machine for classification tasks.
 - Directory: `/qsvm`
 
-
+## Poster 
+- Description: A poster related to the motivations and objectives of this repository.
+- Directory: (https://smolinad.github.io/quantum_machine_learning/docs/poster)[https://smolinad.github.io/quantum_machine_learning/docs/poster]
+  
+## Paper
+- Description: A paper related to the motivations and objectives of this repository.
+- Directory: (https://smolinad.github.io/quantum_machine_learning/docs/poster)[https://smolinad.github.io/quantum_machine_learning/docs/paper]
