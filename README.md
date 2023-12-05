@@ -2,6 +2,7 @@
 
 Sebastian Molina - [smolinad@unal.edu.co](mailto:smolinad@unal.edu.co)  
 Sergio Quiroga - [squirogas@unal.edu.co](mailto:squirogasd@unal.edu.co)
+Supervisors: Fabio Gonzalez & Diego Useche.
 
 This repository is a collection of quantum machine learning models implemented using various quantum computing frameworks. 
 By the time being, the models were implemented on Tencents's `TensorCircuit` and IBM's `Qiskit`.
