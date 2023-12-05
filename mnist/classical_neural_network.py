@@ -1,16 +1,7 @@
-"""
-Sebastian Molina
-smolinad@unal.edu.co
-"""
-
-
-
-import tensorflow as tf
-
-
-
+from sklearn.neural_network import MLPClassifier
 
 class NeuralNetwork():
+
 
     """
     Implements a Neural Network as in the paper by Farhi & Neven. Citing Section 3.3:
@@ -27,27 +18,15 @@ class NeuralNetwork():
         one percent.'
 
     """
-
+    
     def __init__(self, input_shape=(16,)):
-        self.model = tf.keras.models.Sequential([
-            # Hidden layer of 10 neurons, with bias vector.
-            tf.keras.layers.Input(shape=input_shape),
-            tf.keras.layers.Dense(
-                10, 
-                activation="relu", 
-                use_bias=True),
-            # Output layer
-            tf.keras.layers.Dense(4, activation="softmax"),
-            tf.keras.layers.Dense(1)
-        ])
+        self.model = MLPClassifier(hidden_layer_sizes=(10,), activation="tanh", max_iter=200)
 
     def train(self, x_train, y_train):
-        self.model.compile(
-            optimizer="adam", 
-            loss="binary_crossentropy", 
-            metrics=["binary_accuracy"])
-        self.model.fit(x_train, y_train, epochs=100)    
+        self.model.fit(x_train, y_train)
 
     def predict(self, inputs):
         return self.model.predict(inputs)
-    
+        
+    def score(self, x_test, y_test):
+        return self.model.score(x_test, y_test)
