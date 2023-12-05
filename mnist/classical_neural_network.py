@@ -2,7 +2,6 @@ from sklearn.neural_network import MLPClassifier
 
 class NeuralNetwork():
 
-
     """
     Implements a Neural Network as in the paper by Farhi & Neven. Citing Section 3.3:
 
@@ -18,7 +17,7 @@ class NeuralNetwork():
         one percent.'
 
     """
-    
+
     def __init__(self, input_shape=(16,)):
         self.model = MLPClassifier(hidden_layer_sizes=(10,), activation="tanh", max_iter=200)
 
