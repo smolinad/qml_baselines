@@ -23,8 +23,8 @@ The webview of the notebooks can be seen [https://smolinad.github.io/quantum_mac
 
 ## Poster 
 - Description: A poster related to the motivations and objectives of this repository.
-- Directory: (https://smolinad.github.io/quantum_machine_learning/docs/poster)[https://smolinad.github.io/quantum_machine_learning/docs/poster]
+- Directory: https://smolinad.github.io/quantum_machine_learning/docs/poster
   
 ## Paper
 - Description: A paper related to the motivations and objectives of this repository.
-- Directory: (https://smolinad.github.io/quantum_machine_learning/docs/poster)[https://smolinad.github.io/quantum_machine_learning/docs/paper]
+- Directory: https://smolinad.github.io/quantum_machine_learning/docs/paper
