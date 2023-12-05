@@ -12,7 +12,7 @@ By the time being, the models were implemented on Tencents's `TensorCircuit` and
 - We introduce a companion Marimo notebook. Marimo is a new generation Python notebook that provides reactive and interactive data insights.
   The notebook is located [](here), and it can by run as follows:
     + Install `marimo` with `pip install marimo`.
-    + Download the notebook, and in the dowload directory (or saved directory) run `marimo edit nameofthenotebook.py`.
+    + Download the notebook, and in the downloads directory (or any chosen directory) run `marimo edit nameofthenotebook.py`.
     + A local host will promp in your default browser, just as Jupyter notebook. 
 
 ## Model 2: Quantum Support Vector Machine with $ZZ$-feature map
