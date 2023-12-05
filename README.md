@@ -22,6 +22,10 @@ The webview of the notebooks can be seen [here](https://smolinad.github.io/quant
 - Description: Implements a quantum version of a support vector machine for classification tasks.
 - Directory: `/qsvm`
 
+- ## Model 2: Quantum Data Compression
+- Description: Diego implemented a quantum data compresion algorithm based on [this paper](10.1103/PhysRevResearch.4.043007).
+- Directory: `/qsvm`
+
 ## Poster 
 - Description: A poster related to the motivations and objectives of this repository.
 - Directory: https://smolinad.github.io/quantum_machine_learning/docs/poster
