@@ -7,7 +7,7 @@ tc.set_dtype("complex128")
 
 class VariationalClassifier():  
     """
-    Defines a variational circuit in the way of 'Circuit-centric qunatum classifiers' by Schuld, et al (2018).
+    Defines a variational circuit in the way of 'Circuit-centric quantum classifiers' by Schuld, et al (2018).
     """
     def __init__(self, nqubits:int=10, rangeList:list=[1,2,3]):
         self.circuit = None
